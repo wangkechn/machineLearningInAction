@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 27 20:45:20 2018
+
+@author: wangke
+"""
+
+from numpy import *
+#creat a 4*4 array
+random.rand(4,4)
+
+#creat a 4*4 matrix
+randMat = mat(random.rand(4,4))
+
+#the inv of the matrix
+invRandMat = randMat.I
+
+myEye = invRandMat * randMat
+
+ans = myEye - eye(4)
